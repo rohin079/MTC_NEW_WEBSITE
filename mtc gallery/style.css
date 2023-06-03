@@ -1,9 +1,14 @@
 *{
     padding:10px;
-    background-color: #212529;
 }
+
+body {
+  background-image: url(gallery/gallery_bg.jpg);
+  background-size:contain;
+  }
+
 .heading{
-    color: white;
+    color: rgb(0, 0, 0);
     margin-left: 640px;
     font-size: 20px;
 }
@@ -18,8 +23,12 @@
     height: 100%;
     z-index: 1;
   }
+
+  .gallery-item img{
+    padding:10px;
+    background-color: rgba(0, 0, 0, 0.75)
+  }
   .full .content {
-    background-color: rgba(0, 0, 0, 0.75) !important;
     height: 100%;
     width: 100%;
     display: grid;
