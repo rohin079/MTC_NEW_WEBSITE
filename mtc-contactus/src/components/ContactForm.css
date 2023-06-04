@@ -1,0 +1,133 @@
+.heading {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 5.625em;
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 50px;
+}
+
+.heading-container p {
+  font-size: 18px;
+  color: #dedcdc;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-section form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+label {
+  font-size: 20px;
+}
+
+.form-input {
+  padding: 17px 25px;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+}
+
+.form-input:focus {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,
+    0 0 13px rgba(82, 168, 236, 1);
+  outline: 0 none;
+}
+
+.form-input::placeholder {
+  font-size: 15px;
+  color: #9e9c9c;
+}
+
+textarea {
+  resize: none;
+}
+
+.btn {
+  width: 20%;
+  align-self: flex-end;
+  padding: 12px 10px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+
+  background: rgb(255, 49, 49);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 49, 49, 1) 0%,
+    rgba(255, 145, 77, 1) 100%
+  );
+  -webkit-filter: brightness(100%);
+}
+
+.btn:hover {
+  -webkit-filter: brightness(70%);
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 50px;
+  }
+
+  .heading-container p {
+    font-size: 13px;
+  }
+
+  .heading-container {
+    margin-bottom: 40px;
+  }
+
+  .form-section form div label {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
