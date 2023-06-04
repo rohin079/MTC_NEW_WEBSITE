@@ -8,9 +8,9 @@
     sans-serif;
 }
 
-main {
+body {
   height: 100%;
-  background-image: url("./assets/contact_bg.png");
+  background-image: url("/assets/contact_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -48,8 +48,4 @@ main {
     padding-left: 20px;
     padding-right: 20px;
   }
-}
-
-/* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 768px) {
 }
