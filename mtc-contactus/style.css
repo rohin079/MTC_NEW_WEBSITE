@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+body {
+  height: 100%;
+  background-image: url("/assets/contact_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+  }
+
+  .middle {
+    flex-direction: column;
+  }
+
+  .about-us {
+    word-wrap: break-word;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
