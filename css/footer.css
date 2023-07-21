@@ -1,0 +1,147 @@
+
+footer{    
+    width: 100%;
+    position: static;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    color: #181616;
+    padding: 100px 0 30px;
+    font-size: 20px;
+    height: 500px;
+    line-height: 20px;
+    overflow: hidden;
+
+}
+.footer-box{
+    background-color: rgb(255, 255, 255);
+}
+
+
+.row{
+    width:85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: black;
+}
+.col
+{
+    flex-basis: 25%;
+    padding :10px;
+   color: black;
+}
+.col:nth-child(2),.col:nth-child(3)
+{
+    flex-basis: 15%;
+    color: black;
+}
+.logo
+{
+    width: 60%;
+    margin-bottom: 30px;
+}
+.col h3{
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.emailid{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 16px;
+    padding-left: 0px;
+}
+ul li a{
+    text-decoration: none;
+    color: #0e0c0c;
+}
+.social-links .fa-brands{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #0f0e0e;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+
+}
+.copy
+{
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving{
+    0%{
+        left: -20%;
+    }
+    100%
+    {
+        left: 100%;
+    }
+}
+
+
+@media (max-width:700px)
+{
+    footer{
+        bottom: unset;
+    }
+    .col
+{
+    flex-basis: 100%;
+
+}
+.col:nth-child(2),.col:nth-child(3)
+{
+    flex-basis: 15%;
+}
+}
+ul{
+    padding-left: 0%;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.no{
+    display: inline;
+}
