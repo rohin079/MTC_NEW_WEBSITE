@@ -44,9 +44,9 @@ body {
 /* ================= HEADER ================ */
 
 .navbox{
-  height: 200px;
+  height: 130px;
   width: 2080px;
-  background-color: #000000;
+  background-color: #a1d1e4;
   margin-left: -80px;
 }
 .navbar {
@@ -68,19 +68,30 @@ body {
 }
 
 .navbar ul li {
-  margin: 0 1rem;
+  margin-top: -40px;
+  font-size: 25px;
+  display: block;
+  gap: 10px;
+  margin-left: -300px;
   padding: 1rem;
 }
 
+.navbar ul li .Contact{
+margin-left: 500px;
+}
+
 .navbar ul li a {
+  margin-top: 100px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color:#002385;
 }
 
 .navbar ul li a:hover {
-  color: skyblue;
+  color: #002385;
 }
+
+
 
 
 /* ================= MAIN ================ */
@@ -658,10 +669,6 @@ body {
 }
 
 
-body,
-.containerbtn {
-
-}
 
 
 .containerbtn {
