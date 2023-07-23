@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <div class="header-wrapper">
+        <div class="logo">
+          <img src="../images/mtclogo1.png" alt="" />
+        </div>
+
+        <div class="hamburger-icon" onclick="toggleNavMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+
+        <div class="item-container">
+          <a class="nav-link nav-line" href="../mtc-contactus/index.html"
+            >home</a
+          >
+          <a class="nav-link nav-line" href="">team</a>
+          <a class="nav-link nav-line" href="">gallery</a>
+          <a class="nav-link nav-line" href="">get in touch</a>
+          <button class="login-button">login</button>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      function toggleNavMenu() {
+        const itemContainer = document.querySelector(".item-container");
+        itemContainer.classList.toggle("show");
+      }
+    </script>
+
+    <!-- Navbar End -->
+  </body>
+</html>
