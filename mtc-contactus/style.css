@@ -10,7 +10,7 @@
 
 body {
   height: 100%;
-  background-image: url("/assets/contact_bg.png");
+  background-image: url("./assets/contact_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
