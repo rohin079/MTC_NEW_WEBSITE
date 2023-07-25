@@ -1,0 +1,75 @@
+
+
+.gallery-container {
+  position: relative;
+  height: 50vh;
+  margin-left: 10px;
+  width: 200vw;
+  overflow: hidden;
+}
+
+.gallery {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  width: 100vw;
+  height: 200px;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  transform: translateY(-50%);
+}
+
+.frame {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 4px;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  background: white;
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  cursor: pointer;
+  overflow: hidden;
+  background: #6197fc;
+}
+.frame .image {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 90%;
+  pointer-events: none;
+}
+.frame .info {
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+  font-family: "Source Sans Pro", serif;
+  font-size: 25px;
+}
+
+#codepen-link {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  height: 40px;
+  width: 40px;
+  z-index: 10;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/544318/logo.jpg");
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.4;
+  transition: all 0.25s;
+}
+#codepen-link:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 6px #000000;
+}

@@ -1,0 +1,158 @@
+.card {
+    color: #ffffff;
+    font-family: "Fira Sans", sans-serif;
+    height: 350px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform-origin: 100% 50%;
+    transform-style: preserve-3d;
+    width: 400px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: transform 0.6s cubic-bezier(0.49, 0.23, 0.58, 0.49);
+  }
+  .card.flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card-front,
+  .card-back {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.3), transparent 1px, rgba(0, 0, 0, 0.3) 2px);
+    background-size: 3px 3px;
+    background-color: #ffffff;
+    border-radius: 1px;
+    box-shadow: 0px -6px 8px 0px rgba(0, 0, 0, 0.1), 0px 6px 8px 0px rgba(0, 0, 0, 0.1), 6px 0px 8px 0px rgba(0, 0, 0, 0.1), -6px 0px 8px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    padding: 5%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+  }
+  .card-back .layer {
+    background: repeating-linear-gradient(135deg, rgba(76, 71, 31, 0.3), transparent 1px, rgba(76, 71, 31, 0.3) 2px);
+    background-size: 3px 3px;
+    background-color: #000000;
+    color: #000000;
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .card-back .layer:after {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.2), transparent);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .card-back .layer .top,
+  .card-back .layer .bottom {
+    left: 8%;
+    position: absolute;
+    z-index: 1;
+  }
+  .card-back .layer .top {
+    top: 12%;
+  }
+  .card-back .layer .bottom {
+    bottom: 12%;
+  }
+  .card-back .layer h2, .card-back .layer h3, .card-back .layer h4 {
+    font-weight: 400;
+    margin: 2px 0;
+  }
+  .card-back .layer h2 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    
+  }
+
+  .card-back .layer p{
+    font-size: 15px;
+    font-weight: 500;
+    color: #ffffff;
+  
+  }
+
+  .text{
+    margin-top: 100px;
+  }
+  .card-back .layer h3 {
+    font-size: 16px;
+  }
+  .card-back .layer h4 {
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  .card-front .layer {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  .card-front .layer h1 {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    margin: 0 auto;
+    padding: 6px 18px 4px;
+    text-align: center;
+  }
+  .card-front .layer .corner {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    height: 12px;
+    position: absolute;
+    width: 12px;
+  }
+  .card-front .layer .corner:nth-of-type(1) {
+    right: 0;
+    left: 10;
+    top: 0;
+  }
+  .card-front .layer .corner:nth-of-type(2) {
+    left: 0;
+    top: 0;
+    transform: rotateZ(-90deg);
+  }
+  .card-front .layer .corner:nth-of-type(3) {
+    bottom: 0;
+    left: 0;
+    transform: rotateZ(180deg);
+  }
+  .card-front .layer .corner:nth-of-type(4) {
+    bottom: 0;
+    right: 0;
+    transform: rotateZ(90deg);
+  }
+  
+  .card-wrapper {
+    height: 271.7647058824px;
+    max-width: 420px;
+    perspective: 600px;
+    margin-left: 200px;
+    margin-bottom: 300px;   
+     
+    position: relative;
+    width: 100%;
+    transition: transform 1s;
+  }
